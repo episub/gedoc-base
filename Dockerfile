@@ -18,4 +18,6 @@ RUN apt-get update -y \
 		fonts-arphic-gkai00mp \
 		fonts-arphic-uming \
 		fonts-arphic-ukai \
-		fontconfig && fc-cache -fv
+		fontconfig \
+		poppler-utils \
+		imagemagick && fc-cache -fv
