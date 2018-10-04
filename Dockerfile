@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM golang:1.11-stretch
 
 RUN apt-get update -y \
 	&& apt-get install -y --no-install-recommends \
@@ -20,4 +20,4 @@ RUN apt-get update -y \
 		fonts-arphic-ukai \
 		fontconfig \
 		poppler-utils \
-		imagemagick && fc-cache -fv
+		imagemagick && fc-cache -fv && apt-get clean
