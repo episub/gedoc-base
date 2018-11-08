@@ -21,3 +21,7 @@ RUN apt-get update -y \
 		fontconfig \
 		poppler-utils \
 		imagemagick && fc-cache -fv && apt-get clean
+
+ADD install.sh /install.sh
+RUN /install.sh
+RUN fc-cache -f
