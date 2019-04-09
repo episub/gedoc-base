@@ -1,7 +1,8 @@
-FROM golang:1.11-stretch
+FROM ubuntu:18.10
 
 RUN apt-get update -y \
 	&& apt-get install -y --no-install-recommends \
+		curl \
 		pandoc \
 		texlive-binaries \
 		texlive-latex-base \
