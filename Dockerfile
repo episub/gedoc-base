@@ -20,6 +20,7 @@ RUN apt-get update -y \
 		fonts-arphic-ukai \
 		fontconfig \
 		poppler-utils \
+		qpdf \
 		imagemagick && fc-cache -fv && apt-get clean
 
 ADD install.sh /install.sh
