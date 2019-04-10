@@ -20,6 +20,7 @@ RUN apt-get update -y \
 		fonts-arphic-uming \
 		fonts-arphic-ukai \
 		fontconfig \
+		optipng \
 		poppler-utils \
 		qpdf \
 		imagemagick && fc-cache -fv && apt-get clean
