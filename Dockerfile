@@ -27,4 +27,6 @@ RUN apt-get update -y \
 
 ADD install.sh /install.sh
 RUN /install.sh
+# Issue with this file building PDF's, so remove it:
+RUN rm /usr/local/share/fonts/Quicksand[wght].ttf
 RUN fc-cache -f
