@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt-get update -y \
+RUN export DEBIAN_FRONTEND=noninteractive &&  apt-get update -y \
 	&& apt-get install -y --no-install-recommends \
 		curl \
 		pandoc \

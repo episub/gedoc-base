@@ -21,7 +21,7 @@ fi
 clear
 echo "Installing all Google Web Fonts onto your System"
 echo "Downloading the fonts..."
-curl -L https://github.com/google/fonts/tarball/master -o /tmp/master.tar.gz
+curl -L https://github.com/google/fonts/tarball/6df94760ab91af2bcf38a4c8219a302d929b11d7 -o /tmp/master.tar.gz
 echo "Extracting the fonts..."
 mkdir -p /tmp/goog-fonts/fonts
 tar -zxf /tmp/master.tar.gz -C /tmp/goog-fonts/fonts
