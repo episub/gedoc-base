@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:21.04
 
 RUN export DEBIAN_FRONTEND=noninteractive &&  apt-get update -y \
 	&& apt-get install -y --no-install-recommends \
